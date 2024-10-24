@@ -1,47 +1,37 @@
 body {
-    background: linear-gradient(to bottom, #000000, #434343); /* Ustawia gradient od czerni do szarości */
-}
-
-
-header {
-    background: #1e1e1e; /* Ciemniejsze tło dla nagłówka */
-    padding: 20px;
-    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Jasne tło dla lepszej czytelności */
+    color: #333333; /* Ciemny tekst */
 }
 
 h1 {
-    font-size: 2.5em; /* Powiększony nagłówek */
-    margin: 0;
-}
-
-h2 {
-    font-size: 2em; /* Powiększony nagłówek dla sekcji przepisów */
     margin: 20px 0;
-    text-decoration: underline; /* Podkreślony nagłówek */
 }
 
-.recipe {
-    background: #292929; /* Tło dla przepisów */
-    border-radius: 8px; /* Zaokrąglone rogi */
+.recipe-card {
+    margin-bottom: 20px;
+    background: #ffffff; /* Białe tło dla przepisów */
     padding: 15px;
-    margin: 10px 0;
+    border-radius: 8px; /* Zaokrąglone rogi */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Lekki cień dla kart */
 }
 
-.recipe img {
+.recipe-card img {
     max-width: 100%; /* Responsywne obrazy */
     border-radius: 8px; /* Zaokrąglone rogi obrazów */
 }
 
-.ingredients {
-    list-style-type: none; /* Usunięcie punktów z listy składników */
-    padding: 0;
+/* Dostosowanie przycisków */
+.btn {
+    margin: 5px 0; /* Odstęp między przyciskami */
 }
 
-button {
-    background: #ff4081; /* Kolor przycisku */
-    color: #ffffff; /* Jasny tekst przycisku */
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
+.btn-block {
+    padding: 15px;
+    font-size: 1.2em; /* Większa czcionka dla przycisków */
+}
+
+/* Dostosowanie opisu strony */
+.text-center {
+    margin-top: 30px;
 }

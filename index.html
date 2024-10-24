@@ -3,29 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja Kolekcja Przepisów</title>
+    <title>Przepisy Kulinarne</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Moja Kolekcja Przepisów</h1>
-        <nav>
-            <ul>
-                <li><a href="#" data-category="breakfast">Śniadanie</a></li>
-                <li><a href="#" data-category="snack">Drugie Śniadanie</a></li>
-                <li><a href="#" data-category="lunch">Obiad</a></li>
-                <li><a href="#" data-category="dinner">Kolacja</a></li>
-                <li><a href="#" data-category="dessert">Deser</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Przepisy Kulinarne</a>
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav ml-auto">
+                    <button class="btn btn-secondary mx-1" onclick="loadRecipes('sniadanie')">Śniadanie</button>
+                    <button class="btn btn-secondary mx-1" onclick="loadRecipes('drugie_sniadanie')">Drugie Śniadanie</button>
+                    <button class="btn btn-secondary mx-1" onclick="loadRecipes('obiad')">Obiad</button>
+                    <button class="btn btn-secondary mx-1" onclick="loadRecipes('podwieczorek')">Podwieczorek</button>
+                    <button class="btn btn-secondary mx-1" onclick="loadRecipes('kolacja')">Kolacja</button>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <div class="search-container">
-        <input type="text" id="search" placeholder="Szukaj składników...">
+    <div class="container mt-5">
+        <h1 class="text-center text-dark">Kategorie Przepisów</h1>
+        
+        <div id="recipes" class="mt-5"></div>
+        
+        <!-- Opis strony -->
+        <div class="mt-5 text-center text-dark">
+            <h5>O stronie</h5>
+            <p>Ta strona zawiera różnorodne przepisy kulinarne podzielone na kategorie. Możesz łatwo przeglądać i wybierać przepisy, które Cię interesują, a także odkrywać nowe inspiracje kulinarne.</p>
+        </div>
     </div>
-    
-    <div id="recipes"></div>
 
     <script src="script.js"></script>
 </body>

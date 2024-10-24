@@ -1,0 +1,44 @@
+{
+    "przepisy": [
+        {
+            "kategoria": "sniadanie",
+            "nazwa": "Jajecznica z pomidorami",
+            "skladniki": ["jaja", "pomidory", "masło", "sól", "pieprz"],
+            "kalorie": 250,
+            "białko": 20,
+            "zdjecie": "images/breakfast.jpg"
+        },
+        {
+            "kategoria": "drugie_sniadanie",
+            "nazwa": "Smoothie owocowe",
+            "skladniki": ["banan", "jogurt", "miód", "maliny"],
+            "kalorie": 180,
+            "białko": 6,
+            "zdjecie": "images/snacks.jpg"
+        },
+        {
+            "kategoria": "obiad",
+            "nazwa": "Kurczak w sosie śmietanowym",
+            "skladniki": ["kurczak", "śmietana", "czosnek", "przyprawy"],
+            "kalorie": 350,
+            "białko": 30,
+            "zdjecie": "images/lunch.jpg"
+        },
+        {
+            "kategoria": "podwieczorek",
+            "nazwa": "Ciasteczka owsiane",
+            "skladniki": ["płatki owsiane", "miód", "masło", "orzechy"],
+            "kalorie": 200,
+            "białko": 5,
+            "zdjecie": "images/snacks.jpg"
+        },
+        {
+            "kategoria": "kolacja",
+            "nazwa": "Sałatka grecka",
+            "skladniki": ["sałata", "pomidor", "ogórek", "feta", "oliwa"],
+            "kalorie": 150,
+            "białko": 5,
+            "zdjecie": "images/dinner.jpg"
+        }
+    ]
+}
