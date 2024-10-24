@@ -1,11 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
     const recipesContainer = document.getElementById("recipes");
     const searchInput = document.getElementById("search");
+    let recipes = [];
 
     // Funkcja do wczytywania przepisów z pliku JSON
     async function loadRecipes() {
         const response = await fetch("data/recipes.json");
-        const recipes = await response.json();
+        recipes = await response.json();
         displayRecipes(recipes);
     }
 
@@ -34,5 +35,11 @@ document.addEventListener("DOMContentLoaded", () => {
         displayRecipes(filteredRecipes);
     });
 
-    loadRecipes();
-});
+    // Filtrowanie według kategorii
+    const categoryLinks = document.querySelectorAll("nav ul li a");
+    categoryLinks.forEach(link => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const category = e.target.getAttribute("data-category");
+            const filteredByCategory = recipes.filter(recipe => recipe.category === category);
+            display

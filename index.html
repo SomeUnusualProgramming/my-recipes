@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>    
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moja Kolekcja Przepisów</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
@@ -13,14 +13,18 @@
         <nav>
             <ul>
                 <li><a href="#" data-category="breakfast">Śniadanie</a></li>
+                <li><a href="#" data-category="snack">Drugie Śniadanie</a></li>
                 <li><a href="#" data-category="lunch">Obiad</a></li>
-                <li><a href="#" data-category="snack">Podwieczorek</a></li>
                 <li><a href="#" data-category="dinner">Kolacja</a></li>
+                <li><a href="#" data-category="dessert">Deser</a></li>
             </ul>
         </nav>
     </header>
 
-    <input type="text" id="search" placeholder="Szukaj składników...">
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Szukaj składników...">
+    </div>
+    
     <div id="recipes"></div>
 
     <script src="script.js"></script>

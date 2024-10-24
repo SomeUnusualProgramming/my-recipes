@@ -12,5 +12,19 @@
         "ingredients": ["kurczak", "sałata", "pomidor", "ogórek"],
         "calories": 400,
         "protein": 30
+    },
+    {
+        "name": "Sernik na zimno",
+        "category": "dessert",
+        "ingredients": ["ser", "biscuit", "żelatyna", "cukier"],
+        "calories": 300,
+        "protein": 5
+    },
+    {
+        "name": "Kanapka z awokado",
+        "category": "snack",
+        "ingredients": ["chleb", "awokado", "sól", "pieprz"],
+        "calories": 200,
+        "protein": 4
     }
 ]
