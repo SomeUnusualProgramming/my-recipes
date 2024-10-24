@@ -4,22 +4,17 @@ body {
 
 h1, h2 {
     color: #ffffff;
-    font-size: 2rem; /* Powiększenie rozmiaru nagłówków */
-}
-
-.nav-link {
-    margin: 0 10px; /* Dodaje margines między linkami */
-    transition: background-color 0.3s; /* Efekt przejścia */
-    font-size: 1.2rem; /* Powiększenie rozmiaru linków */
-}
-
-.nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Lekko przezroczysty efekt przy najechaniu */
 }
 
 .card {
     background-color: #1e1e1e;
     border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .recipe-image {
@@ -27,4 +22,20 @@ h1, h2 {
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+/* Zwiększenie rozmiaru napisów i ich szersze rozmieszczenie */
+.navbar-nav .nav-item .nav-link {
+    font-size: 24px; /* Większe napisy */
+    margin: 0 40px; /* Szersze odstępy między linkami */
+    font-weight: bold; /* Pogrubienie tekstu */
+    text-transform: uppercase; /* Duże litery */
+}
+
+.navbar {
+    padding: 10px 0; /* Zmniejszenie paddingu w pionie, aby pasek nie był wyższy */
+}
+
+.nav-link:hover {
+    color: #ffcc00; /* Kolor zmienia się na hover */
 }

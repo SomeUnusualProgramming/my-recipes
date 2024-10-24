@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body class="bg-dark text-light">
     <header class="bg-primary text-center py-4">
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -20,38 +18,53 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#sniadanie">Śniadanie</a>
+                            <a class="nav-link" href="#sniadanie" onclick="showCategory('sniadanie'); loadRecipes('breakfast');">Śniadanie</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#drugie-sniadanie">Drugie Śniadanie</a>
+                            <a class="nav-link" href="#drugie-sniadanie" onclick="showCategory('drugie-sniadanie'); loadRecipes('secondBreakfast');">Drugie Śniadanie</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#obiad">Obiad</a>
+                            <a class="nav-link" href="#obiad" onclick="showCategory('obiad'); loadRecipes('lunch');">Obiad</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#podwieczorek">Podwieczorek</a>
+                            <a class="nav-link" href="#podwieczorek" onclick="showCategory('podwieczorek'); loadRecipes('afternoonSnack');">Podwieczorek</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#kolacja">Kolacja</a>
+                            <a class="nav-link" href="#kolacja" onclick="showCategory('kolacja'); loadRecipes('dinner');">Kolacja</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
     <main class="container my-5">
-        <section id="sniadanie" class="mb-5">
-            <h2>Śniadanie</h2>
-            <div class="row" id="breakfast-recipes"></div>
-        </section>
-
-        <footer class="mt-5 text-center">
-            <p>© 2024 Przepisy Kulinarne. Wszystkie prawa zastrzeżone.</p>
-        </footer>
+        <div id="sniadanie-section" class="category-section">
+            <div id="breakfast-recipes" class="row"></div>
+        </div>
+        
+        <div id="drugie-sniadanie-section" class="category-section">
+            <div id="secondBreakfast-recipes" class="row"></div>
+        </div>
+        
+        <div id="podwieczorek-section" class="category-section">
+            <div id="afternoonSnack-recipes" class="row"></div>
+        </div>
+        
+        <div id="obiad-section" class="category-section">
+            <div id="lunch-recipes" class="row"></div>
+        </div>
+        
+        <div id="kolacja-section" class="category-section">
+            <div id="dinner-recipes" class="row"></div>
+        </div>
+        
     </main>
+    
+
+    <footer class="mt-5 text-center">
+        <p>© 2024 Przepisy Kulinarne. Wszystkie prawa zastrzeżone.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
