@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Przepisy Kulinarne</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Przepisy Kulinarne</a>
-            <div class="collapse navbar-collapse">
-                <div class="navbar-nav ml-auto">
-                    <button class="btn btn-secondary mx-1" onclick="loadRecipes('sniadanie')">Śniadanie</button>
-                    <button class="btn btn-secondary mx-1" onclick="loadRecipes('drugie_sniadanie')">Drugie Śniadanie</button>
-                    <button class="btn btn-secondary mx-1" onclick="loadRecipes('obiad')">Obiad</button>
-                    <button class="btn btn-secondary mx-1" onclick="loadRecipes('podwieczorek')">Podwieczorek</button>
-                    <button class="btn btn-secondary mx-1" onclick="loadRecipes('kolacja')">Kolacja</button>
+
+<body class="bg-dark text-light">
+    <header class="bg-primary text-center py-4">
+        <h1>Przepisy Kulinarne</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sniadanie">Śniadanie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#drugie-sniadanie">Drugie Śniadanie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#obiad">Obiad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#podwieczorek">Podwieczorek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kolacja">Kolacja</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <div class="container mt-5">
-        <h1 class="text-center text-dark">Kategorie Przepisów</h1>
-        
-        <div id="recipes" class="mt-5"></div>
-        
-        <!-- Opis strony -->
-        <div class="mt-5 text-center text-dark">
-            <h5>O stronie</h5>
-            <p>Ta strona zawiera różnorodne przepisy kulinarne podzielone na kategorie. Możesz łatwo przeglądać i wybierać przepisy, które Cię interesują, a także odkrywać nowe inspiracje kulinarne.</p>
-        </div>
-    </div>
+    <main class="container my-5">
+        <section id="sniadanie" class="mb-5">
+            <h2>Śniadanie</h2>
+            <div class="row" id="breakfast-recipes"></div>
+        </section>
+
+        <!-- Dodaj inne sekcje z przepisami -->
+
+        <footer class="mt-5 text-center">
+            <p>© 2024 Przepisy Kulinarne. Wszystkie prawa zastrzeżone.</p>
+        </footer>
+    </main>
 
     <script src="script.js"></script>
 </body>
+
 </html>

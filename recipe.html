@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szczegóły Przepisu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Przepisy Kulinarne</a>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <div id="recipe-details"></div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const recipeId = urlParams.get('id');
+
+        // Przykładowe dane przepisu
+        const recipesData = {
+            1: {
+                title: 'Jajecznica',
+                img: 'https://via.placeholder.com/300',
+                ingredients: ['2 jajka', '1 pomidor', 'Sól', 'Pieprz'],
+                instructions: 'Usmażyć jajka na patelni z pomidorami.',
+                calories: 250
+            },
+            // Dodaj inne przepisy
+        };
+
+        const recipe = recipesData[recipeId];
+        if (recipe) {
+            document.getElementById('recipe-details').innerHTML = `
+                <h2>${recipe.title}</h2>
+                <img src="${recipe.img}" alt="${recipe.title}" class="img-fluid">
+                <h4>Składniki:</h4>
+                <ul>
+                    ${recipe.ingredients.map(ingredient => `<li>${ingredient}</li>`).join('')}
+                </ul>
+                <h4>Instrukcje:</h4>
+                <p>${recipe.instructions}</p>
+                <p>Kalorie: ${recipe.calories}</p>
+            `;
+        } else {
+            document.getElementById('recipe-details').innerHTML = '<h2>Przepis nie znaleziony</h2>';
+        }
+    </script>
+</body>
+</html>
