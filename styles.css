@@ -4,6 +4,17 @@ body {
 
 h1, h2 {
     color: #ffffff;
+    font-size: 2rem; /* Powiększenie rozmiaru nagłówków */
+}
+
+.nav-link {
+    margin: 0 10px; /* Dodaje margines między linkami */
+    transition: background-color 0.3s; /* Efekt przejścia */
+    font-size: 1.2rem; /* Powiększenie rozmiaru linków */
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Lekko przezroczysty efekt przy najechaniu */
 }
 
 .card {

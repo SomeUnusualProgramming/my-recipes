@@ -1,44 +1,68 @@
-{
-    "przepisy": [
-        {
-            "kategoria": "sniadanie",
-            "nazwa": "Jajecznica z pomidorami",
-            "skladniki": ["jaja", "pomidory", "masło", "sól", "pieprz"],
-            "kalorie": 250,
-            "białko": 20,
-            "zdjecie": "images/breakfast.jpg"
-        },
-        {
-            "kategoria": "drugie_sniadanie",
-            "nazwa": "Smoothie owocowe",
-            "skladniki": ["banan", "jogurt", "miód", "maliny"],
-            "kalorie": 180,
-            "białko": 6,
-            "zdjecie": "images/snacks.jpg"
-        },
-        {
-            "kategoria": "obiad",
-            "nazwa": "Kurczak w sosie śmietanowym",
-            "skladniki": ["kurczak", "śmietana", "czosnek", "przyprawy"],
-            "kalorie": 350,
-            "białko": 30,
-            "zdjecie": "images/lunch.jpg"
-        },
-        {
-            "kategoria": "podwieczorek",
-            "nazwa": "Ciasteczka owsiane",
-            "skladniki": ["płatki owsiane", "miód", "masło", "orzechy"],
-            "kalorie": 200,
-            "białko": 5,
-            "zdjecie": "images/snacks.jpg"
-        },
-        {
-            "kategoria": "kolacja",
-            "nazwa": "Sałatka grecka",
-            "skladniki": ["sałata", "pomidor", "ogórek", "feta", "oliwa"],
-            "kalorie": 150,
-            "białko": 5,
-            "zdjecie": "images/dinner.jpg"
-        }
-    ]
-}
+[
+    {
+        "title": "Omlet z Warzywami",
+        "category": "Śniadanie",
+        "ingredients": [
+            "2 jajka",
+            "1 pomidor",
+            "1 papryka",
+            "sól",
+            "pieprz"
+        ],
+        "calories": 300,
+        "protein": 20,
+        "image": "https://example.com/images/omlet.jpg"
+    },
+    {
+        "title": "Sałatka Owocowa",
+        "category": "Drugie Śniadanie",
+        "ingredients": [
+            "1 banan",
+            "1 jabłko",
+            "100g truskawek",
+            "100g jogurtu"
+        ],
+        "calories": 150,
+        "protein": 5,
+        "image": "https://example.com/images/salatka.jpg"
+    },
+    {
+        "title": "Makaron z Pesto",
+        "category": "Obiad",
+        "ingredients": [
+            "200g makaronu",
+            "50g pesto",
+            "parmezan",
+            "sól"
+        ],
+        "calories": 500,
+        "protein": 15,
+        "image": "https://example.com/images/makaron.jpg"
+    },
+    {
+        "title": "Tarta Owocowa",
+        "category": "Podwieczorek",
+        "ingredients": [
+            "200g kruchych ciastek",
+            "300g owoców sezonowych",
+            "100g śmietany"
+        ],
+        "calories": 400,
+        "protein": 5,
+        "image": "https://example.com/images/tarta.jpg"
+    },
+    {
+        "title": "Zupa Pomidorowa",
+        "category": "Kolacja",
+        "ingredients": [
+            "500g pomidorów",
+            "1 cebula",
+            "czosnek",
+            "sól",
+            "pieprz"
+        ],
+        "calories": 200,
+        "protein": 4,
+        "image": "https://example.com/images/zupa.jpg"
+    }
+]
