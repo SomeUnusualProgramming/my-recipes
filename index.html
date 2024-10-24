@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="pl">
+<head>    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Recipes</title>
+    <title>Moja Kolekcja Przepisów</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>My Recipe Collection</h1>
+        <h1>Moja Kolekcja Przepisów</h1>
+        <nav>
+            <ul>
+                <li><a href="#" data-category="breakfast">Śniadanie</a></li>
+                <li><a href="#" data-category="lunch">Obiad</a></li>
+                <li><a href="#" data-category="snack">Podwieczorek</a></li>
+                <li><a href="#" data-category="dinner">Kolacja</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="recipes">
-        <article class="recipe">
-            <h2>Spaghetti Bolognese</h2>
-            <p>Category: Main Course</p>
-            <p>Ingredients: spaghetti, minced meat, tomatoes...</p>
-        </article>
-        <!-- Dodaj więcej przepisów w podobnej strukturze -->
-    </section>
+    <input type="text" id="search" placeholder="Szukaj składników...">
+    <div id="recipes"></div>
 
     <script src="script.js"></script>
 </body>
